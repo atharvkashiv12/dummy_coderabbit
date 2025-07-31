@@ -2,13 +2,13 @@ package com.example.demo;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
-import java.util.List; // ❌ unused import
+import java.util.List; 
 
 @RestController
-class HelloController { // ❌ should probably be public
+class HelloController { 
 
     @GetMapping("/hello")
-    public String getmsg() { // ❌ bad naming
-        return "Helo from Spring Boot!"; // ❌ typo in "Hello"
+    public String getmsg() { 
+        return "Helo from Spring Boot!"; 
     }
 }
